@@ -12,6 +12,7 @@
 		14B5E3CE1C9BD60200FB2B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B5E3CC1C9BD60200FB2B52 /* Main.storyboard */; };
 		14B5E3D01C9BD60200FB2B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B5E3CF1C9BD60200FB2B52 /* Assets.xcassets */; };
 		14B5E3D31C9BD60200FB2B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B5E3D11C9BD60200FB2B52 /* LaunchScreen.storyboard */; };
+		14B5E3DF1C9FC98C00FB2B52 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B5E3DE1C9FC98C00FB2B52 /* UIImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		14B5E3CF1C9BD60200FB2B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14B5E3D21C9BD60200FB2B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B5E3D41C9BD60200FB2B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B5E3DC1C9FC98B00FB2B52 /* TestScrollTable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestScrollTable-Bridging-Header.h"; sourceTree = "<group>"; };
+		14B5E3DD1C9FC98C00FB2B52 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		14B5E3DE1C9FC98C00FB2B52 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,15 @@
 		14B5E3C71C9BD60200FB2B52 /* TestScrollTable */ = {
 			isa = PBXGroup;
 			children = (
+				14B5E3DD1C9FC98C00FB2B52 /* UIImageEffects.h */,
+				14B5E3DE1C9FC98C00FB2B52 /* UIImageEffects.m */,
 				14B5E3C81C9BD60200FB2B52 /* AppDelegate.swift */,
 				14B5E3CA1C9BD60200FB2B52 /* ViewController.swift */,
 				14B5E3CC1C9BD60200FB2B52 /* Main.storyboard */,
 				14B5E3CF1C9BD60200FB2B52 /* Assets.xcassets */,
 				14B5E3D11C9BD60200FB2B52 /* LaunchScreen.storyboard */,
 				14B5E3D41C9BD60200FB2B52 /* Info.plist */,
+				14B5E3DC1C9FC98B00FB2B52 /* TestScrollTable-Bridging-Header.h */,
 			);
 			path = TestScrollTable;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 			files = (
 				14B5E3CB1C9BD60200FB2B52 /* ViewController.swift in Sources */,
 				14B5E3C91C9BD60200FB2B52 /* AppDelegate.swift in Sources */,
+				14B5E3DF1C9FC98C00FB2B52 /* UIImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +255,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestScrollTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iceboxi.TestScrollTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestScrollTable/TestScrollTable-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -258,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestScrollTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iceboxi.TestScrollTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestScrollTable/TestScrollTable-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +299,7 @@
 				14B5E3D91C9BD60200FB2B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
